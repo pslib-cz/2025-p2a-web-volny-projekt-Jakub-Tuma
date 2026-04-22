@@ -49,7 +49,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`Pageeeeees`](#) |
 | Grafický manuál (Figma / Canva) | [`Moodboard + color palette`](https://www.figma.com/design/Q41LSNAJJECAJMxAptLOxl/Web-projekt?node-id=6-138&t=cnLXxC37ZhpKhOMG-0) |
 | Grafický návrh webu (Figma) | [`Návrh`](https://www.figma.com/design/Q41LSNAJJECAJMxAptLOxl/Web-projekt?node-id=1-3&p=f&t=cnLXxC37ZhpKhOMG-0) |
 | Fotografie / média | [`Assets ve složce projektu`](src/assets/) |
