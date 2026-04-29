@@ -2,5 +2,8 @@
     --black: #0D0C0C;
     --purple: #887AB7;
     --text-color: #FFFFFF;
-    --footer: rgba(255, 255, 255, 0.5);
+    --footer: rgba(255, 255, 255, 0.4);
+    --input: rgba(255, 255, 255, 0.6);
+    --hover: #A496D5;
+    --click: #4B4465;
 }
