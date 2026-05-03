@@ -20,9 +20,7 @@ _Uveďte konkurenční projekty. Co se vám na nich líbí, co ne? V čem se mů
 
 Inspirace vychází hlavně z webů studií, která umí propojit silný vizuál s jasnou komunikací:
 
-- `Supergiant Games` - skvělé představení her skrze stylové artworky a stručné texty.
-- `CD PROJEKT RED` - profesionální prezentace značky a dobrá struktura sekcí.
-- `Remedy Entertainment` - silná atmosféra a důraz na příběh.
+- `Moje Hlava`
 
 Co si z inspirace beru:
 - výraznou identitu značky už v hero sekci,
@@ -40,7 +38,7 @@ Co si z inspirace beru:
 
 _Kdo je váš cílový uživatel / zákazník? Popište typického zástupce cílové skupiny._
 
-Cílový uživatel je hráč ve věku přibližně 16 až 35 let, který má rád příběhové hry, sci-fi/fantasy prostředí a výraznou atmosféru. Typický návštěvník hledá nové indie studio nebo novou hru, která nabídne silný zážitek, ne jen rychlou akci bez příběhu. Sekundární skupinou jsou potenciální spolupracovníci (grafici, vývojáři, sound designéři), kteří si na webu ověřují styl značky a směřování studia.
+Cílový uživatel je hráč her, který má rád příběhové hry, sci-fi/fantasy prostředí a výraznou atmosféru. Typický návštěvník hledá nové indie studio nebo novou hru, která nabídne silný zážitek, ne jen rychlou akci bez příběhu. Sekundární skupinou jsou potenciální spolupracovníci (grafici, vývojáři, sound designéři), kteří si na webu ověřují styl značky a směřování studia.
 
 
 ## Odkazy a výstupy
