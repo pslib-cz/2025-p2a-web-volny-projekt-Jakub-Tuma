@@ -17,6 +17,7 @@
 }
 
 html {
+    min-width: 360px;
     scroll-behavior: smooth;
 }
 
@@ -172,8 +173,10 @@ main {
 
 .img {
     display: inline-block;
-    width: clamp(120px, 22vw, 290px);
-    height: clamp(160px, 30vw, 400px);
+    min-width: 100px;
+    min-height: 110px;
+    width: max(27vw);
+    height: max(35vw);
     margin: 0 1vw 1vh;
     object-fit: cover;
     border-radius: clamp(8px, 1vw, 16px);
