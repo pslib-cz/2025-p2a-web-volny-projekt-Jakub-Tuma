@@ -39,6 +39,7 @@ body {
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .brand {
@@ -66,7 +67,6 @@ body {
     border-radius: 10vw;
     width: clamp(48px, 6vw, 64px);
     height: clamp(48px, 6vw, 64px);
-    border: 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -79,6 +79,7 @@ body {
 .menu-button span {
     position: absolute;
     display: block;
+    top: 50%;
     left: 50%;
     width: clamp(32px, 5vw, 44px);
     height: clamp(5px, 0.5vw, 7px);

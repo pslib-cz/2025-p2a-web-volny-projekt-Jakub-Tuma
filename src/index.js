@@ -2,7 +2,7 @@ const menuButton = document.querySelector('.menu-button');
 const menuPanel = document.querySelector('.menu-panel');
 const smth = document.querySelector('.smth');
 
-if (menuButton && menuPanel && smth) {
+if (menuButton && menuPanel) {
 	const setMenuState = (isOpen) => {
 		document.body.classList.toggle('menu-open', isOpen);
 		menuButton.setAttribute('aria-expanded', String(isOpen));
