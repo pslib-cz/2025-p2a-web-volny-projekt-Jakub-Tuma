@@ -197,7 +197,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2vh;
-    max-width: 860px;
+    max-width: 1200px;
     width: 90%;
     height: auto;
     margin: 3vh auto 0;
