@@ -191,6 +191,13 @@ main {
     color: var(--text-color);
     font-size: clamp(1.4rem, 2vw, 1.8rem);
     line-height: 1.7;
+    text-decoration: none;
+}
+
+.text--email-white:hover {
+    transition: color 180ms ease-in-out;
+    color: var(--hover);
+    text-decoration: underline;
 }
 
 .img-container {
@@ -436,11 +443,12 @@ main {
 .text--email {
     text-decoration: none;
     color: var(--footer);
-    transition: color 180ms ease;
 }
 
 .text--email:hover {
+    transition: color 180ms ease-in-out;
     color: var(--hover);
+    text-decoration: underline;
 }
 
 .nav-footer {
