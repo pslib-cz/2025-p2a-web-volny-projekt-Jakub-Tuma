@@ -57,17 +57,14 @@ body {
     border-bottom: 1px solid var(--border-hd-ft);
 }
 
-.brand {
+.brand a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 1.5vw;
     background-color: var(--black);
     padding: 0.7vh 1.2vw;
     border-radius: 10vw;
-}
-
-.brand a {
-    text-decoration: none;
 }
 
 .brand img {
@@ -146,6 +143,7 @@ body.menu-open .smth {
     flex-direction: column;
     gap: 1vh;
     z-index: 2;
+    background-color: #0d0c0c42 ;
 }
 
 .menu-panel a {
