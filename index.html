@@ -12,8 +12,10 @@
 <body>
     <header class="navbar" aria-label="VoidWorks header">
         <div class="brand">
-            <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo" href="index.html">
-            <p class="heading">VoidWorks</p>
+            <a href="index.html" class="brand--link">
+                <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo" href="index.html">
+                <p class="heading">VoidWorks</p>
+            </a>
         </div>
 
         <a class="menu-button" href="#" aria-label="Otevřít menu" aria-expanded="false"
@@ -43,9 +45,23 @@
         </section>
 
         <section class="img-container" aria-label="Postavy z našich her">
-            <img src="src/assets/char/mercenary.jpg" alt="Žoldák" class="img img-blur">
-            <img src="src/assets/char/astronaut.jpg" alt="Astronaut" class="img img-blur">
-            <img src="src/assets/char/knight.jpg" alt="Rytíř" class="img img-blur">
+            <picture class="img img-blur" aria-label="mercenary">
+                <source type="image/avif" srcset="src/assets/char/avif/mercenary.avif">
+                <source type="image/webp" srcset="src/assets/char/webp/mercenary.webp">
+                <img src="src/assets/char/jpg/mercenary.jpg" alt="mercenary" class="img img-blur">
+            </picture>
+
+            <picture class="img img-blur" aria-label="astronaut">
+                <source type="image/avif" srcset="src/assets/char/avif/astronaut.avif">
+                <source type="image/webp" srcset="src/assets/char/webp/astronaut.webp">
+                <img src="src/assets/char/jpg/astronaut.jpg" alt="astronaut" class="img img-blur">
+            </picture>
+
+            <picture class="img img-blur" aria-label="knight">
+                <source type="image/avif" srcset="src/assets/char/avif/knight.avif">
+                <source type="image/webp" srcset="src/assets/char/webp/knight.webp">
+                <img src="src/assets/char/jpg/knight.jpg" alt="knight" class="img img-blur">
+            </picture>
         </section>
 
         <section id="games" aria-labelledby="games-heading">
@@ -96,7 +112,7 @@
         <footer class="footer">
             <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
             <div class="text">
-                <a href="mailto:contact@voidworks.com" class="text--email">contact@voidworks.com</a>
+                <a href="mailto:jakub.tuma@gambaaa.fun" class="text--email">contact@voidworks.com</a>
             </div>
             <nav class="nav-footer" aria-label="Patička navigace">
                 <a href="index.html">Domů</a>
