@@ -678,10 +678,13 @@ section .heading {
     outline: 3px solid rgba(136, 122, 183, 0.2);
 }
 
-@media (min-width: 1024px) {
+.text--contact {
+        justify-self: center;
+    }
 
-    .text--contact {
-        margin-left: 1.75em;
+@media (min-width: 1024px) {
+    .heading--left {
+        text-align: left;
     }
 
     .centered {
@@ -707,7 +710,8 @@ section .heading {
     .centered .text {
         width: min(95%, 80ch);
         text-align: left;
-        margin-left: 6rem;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
     #homepage .smth .heading {
