@@ -189,6 +189,8 @@ section .heading {
     color: var(--purple);
 }
 
+
+
 .text {
     max-width: 65ch;
     width: 90%;
@@ -677,6 +679,11 @@ section .heading {
 }
 
 @media (min-width: 1024px) {
+
+    .text--contact {
+        margin-left: 1.75em;
+    }
+
     .centered {
         display: flex;
         flex-direction: column;
@@ -807,6 +814,18 @@ section .heading {
 }
 
 @media (max-width: 720px) {
+    .text {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        align-self: center;
+    }
+
+    .contact-right .message .btn {
+        align-self: center;
+        margin-left: 9em;
+    }
+
     .games-grid {
         width: min(94vw, 1500px);
     }
