@@ -8,6 +8,7 @@
     <title>Contact</title>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
     <header class="navbar" aria-label="VoidWorks header">
         <div class="brand">
             <a href="index.html">
@@ -30,13 +31,13 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="contact-row">
             <div class="contact-left">
-                <div class="smth">
-                    <p class="heading">Ozvi se nám</p>
-                    <p class="text">Máš otázku nebo nápad?  Napiš nám...</p>
-                    <p class="text">contact@voidworks.com</p>
+                <div class="smth" id="rattata">
+                    <p class="heading heading--left">Ozvi se nám</p>
+                    <p class="text text--contact">Máš otázku nebo nápad?</p>
+                    <p class="text text--contact">Napiš nám: <a href="mailto:jakub.tuma@gambaaa.fun" class="text text--email-white">contact@voidworks.com</a></p>
                 </div>
             </div>
 
@@ -52,6 +53,9 @@
 
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" class="text--field" id="email" name="email" placeholder="Email..." required>
+
+                        <label for="subject" class="sr-only">Předmět</label>
+                        <input type="text" class="text--field" id="subject" name="subject" placeholder="Předmět..." required>
 
                         <label for="message" class="sr-only">Zpráva</label>
                         <textarea class="text--field text--field--big" id="message" name="message" placeholder="Zpráva..." rows="5" required></textarea>
@@ -117,15 +121,17 @@
 
 
     <footer class="footer">
-            <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
-            <div class="text">
-                <a href="mailto:jakub.tuma@gambaaa.fun" class="text--email">contact@voidworks.com</a>
-            </div>
-            <nav class="nav-footer" aria-label="Patička navigace">
-                <a href="index.html">Domů</a>
-                <a href="games.html">Hry</a>
-                <a href="contact.html">Kontakt</a>
-            </nav>
-        </footer>
+        <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
+        <div class="text">
+            <a href="mailto:jakub.tuma@gambaaa.fun" class="text--email">contact@voidworks.com</a>
+        </div>
+        <nav class="nav-footer" aria-label="Patička navigace">
+            <a href="index.html">Domů</a>
+            <span></span>
+            <a href="games.html">Hry</a>
+            <span></span>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </footer>
 </body>
 </html>

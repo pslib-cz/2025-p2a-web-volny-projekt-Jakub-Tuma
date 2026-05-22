@@ -12,6 +12,7 @@
     --click: #4B4465;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +24,6 @@
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -41,7 +41,7 @@ body {
     background: var(--bg);
     color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: left;
     min-width: 320px;
     overflow-x: hidden;
 }
@@ -53,6 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     z-index: 100;
     border-bottom: 1px solid var(--border-hd-ft);
 }
@@ -143,7 +144,7 @@ body.menu-open .smth {
     flex-direction: column;
     gap: 1vh;
     z-index: 2;
-    background-color: #0d0c0c42 ;
+    background-color: #0d0c0c42;
 }
 
 .menu-panel a {
@@ -172,6 +173,11 @@ main {
     gap: 8vh;
 }
 
+section .heading {
+    text-align: center;
+    margin: 0 auto 0.6rem;
+}
+
 .heading {
     font-size: clamp(2.8rem, 6vw, 4.5rem);
     line-height: 1.1;
@@ -184,16 +190,27 @@ main {
     color: var(--purple);
 }
 
+
+
 .text {
     max-width: 65ch;
     width: 90%;
-    margin-inline: auto;
+    margin: 0;
     color: var(--text-color);
+    text-align: left;
     font-size: clamp(1.4rem, 2vw, 1.8rem);
     line-height: 1.7;
+    text-decoration: none;
+}
+
+.text--email-white:hover {
+    transition: color 180ms ease-in-out;
+    color: var(--hover);
+    text-decoration: underline;
 }
 
 .img-container {
+    display: flex;
     text-align: center;
     overflow: hidden;
 }
@@ -218,6 +235,10 @@ main {
     display: flex;
     justify-items: center;
     gap: 8vh;
+}
+
+.game-container .game-card {
+    min-height: 760px;
 }
 
 .games-grid {
@@ -385,14 +406,6 @@ main {
     transform: translateY(-1px);
 }
 
-.card-prev::before {
-    content: '‹';
-}
-
-.card-next::before {
-    content: '›';
-}
-
 .card-prev {
     left: 8px;
 }
@@ -433,14 +446,19 @@ main {
     text-align: center;
 }
 
+.footer .text {
+    text-align: center;
+}
+
 .text--email {
     text-decoration: none;
     color: var(--footer);
-    transition: color 180ms ease;
 }
 
 .text--email:hover {
+    transition: color 180ms ease-in-out;
     color: var(--hover);
+    text-decoration: underline;
 }
 
 .nav-footer {
@@ -464,6 +482,8 @@ main {
 .opacity-40 {
     font-size: clamp(2rem, 3vw, 2.2rem);
     color: rgba(255, 255, 255, 0.4);
+    justify-self: center;
+    text-align: left;
 }
 
 .message {
@@ -497,7 +517,10 @@ main {
 
 .text--field--big {
     min-height: 120px;
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 14px;
+    resize: none;
 }
 
 .btn {
@@ -545,168 +568,6 @@ main {
     justify-content: center;
     flex: 0 0 140px;
     align-self: center;
-}
-
-@media (min-width: 1024px) {
-    .menu-button {
-        display: none;
-    }
-
-    .menu-panel {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        padding: 0;
-        gap: 2.5vw;
-        background: transparent;
-        border: none;
-        background-color: var(--black);
-        border-radius: 10vw;
-        padding: 1.2vh 1.8vw;
-    }
-
-    .menu-panel a {
-        padding: 0;
-    }
-
-    .games-grid {
-        flex-direction: row;
-        gap: 2.5rem;
-        align-items: flex-start;
-    }
-
-    .games-column--left {
-        order: 1;
-    }
-
-    .games-column--right {
-        order: 2;
-    }
-
-    .game-card {
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        gap: 1.8rem;
-        padding: 2.2vh 2vw;
-    }
-
-    .card-swiper {
-        flex: 0 0 clamp(190px, 18vw, 290px);
-        width: clamp(190px, 18vw, 290px);
-        max-width: none;
-    }
-
-    .game-card__content {
-        flex: 1 1 0;
-        align-items: flex-start;
-    }
-
-    .game-card__title {
-        margin-bottom: 0;
-    }
-
-    .message--fields {
-        align-items: flex-start;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .message--fields .text--field--big {
-        flex: 3 1 0;
-    }
-
-    .message .btn {
-        order: 1;
-        align-self: flex-end;
-        margin-top: 0.8rem;
-        padding: 0.2rem 0.6rem;
-    }
-
-    .contact-right .message {
-        max-width: 900px;
-        margin: 0;
-    }
-}
-
-@media (max-width: 720px) {
-    .games-grid {
-        width: min(94vw, 1500px);
-    }
-
-    .game-card {
-        padding: 1.8vh 1.2rem;
-    }
-
-    .card-nav {
-        width: 32px;
-        height: 32px;
-    }
-
-    .card-nav::before {
-        font-size: 1.35rem;
-    }
-
-    .contact-row {
-        flex-direction: column;
-        gap: 1.2rem;
-        padding: 0;
-    }
-
-    .message {
-        align-items: center !important;
-    }
-
-    .message--fields {
-        flex-direction: column;
-        order: 0;
-    }
-
-    .message--fields .text--field,
-    .message--fields .text--field--big {
-        display: block;
-        width: 100% !important;
-        max-width: none !important;
-        box-sizing: border-box;
-    }
-
-    .message .btn {
-        order: 1;
-        display: block;
-        width: auto;
-        margin-top: 0.8rem;
-        margin-left: 0;
-        margin-right: 0;
-        align-self: flex-end;
-    }
-
-    .contact-middle {
-        flex: none;
-        width: auto;
-        order: 2;
-        margin: 0 auto;
-    }
-
-    .contact-left {
-        order: 1;
-    }
-
-    .contact-right {
-        align-items: center;
-        align-self: center;
-        width: 100%;
-        order: 3;
-    }
-
-    .contact-left .smth {
-        text-align: center;
-    }
-
-    .contact-right .message {
-        margin: 0 auto;
-        width: min(95%, 28em);
-    }
 }
 
 .team-section {
@@ -797,4 +658,264 @@ main {
 .social-link svg {
     width: 100%;
     height: 100%;
+}
+
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -3rem;
+    background: var(--purple);
+    color: var(--text-color);
+    padding: 0.45rem 0.75rem;
+    border-radius: 6px;
+    z-index: 120;
+    transition: top 160ms ease, transform 160ms ease;
+}
+
+.skip-link:focus {
+    top: 1rem;
+    transform: translateY(0);
+    outline: 3px solid rgba(136, 122, 183, 0.2);
+}
+
+.text--contact {
+        justify-self: center;
+    }
+
+@media (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-footer {
+        flex-wrap: nowrap;
+        gap: 2vw;
+    }
+
+    .nav-footer span {
+        background: var(--footer);
+        display: block;
+        width: 1px;
+        height: 1em;
+    }
+
+    .heading--left {
+        text-align: left;
+    }
+
+    .centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1rem, 3vw, 2.5rem);
+        justify-content: center;
+        width: 100%;
+        padding: 0 2vw;
+        margin-left: 0;
+    }
+
+    .centered .heading {
+        width: min(100%, 140ch);
+        max-width: 140ch;
+        text-align: center;
+        white-space: normal;
+        overflow-wrap: normal;
+        word-break: keep-all;
+    }
+
+    .centered .text {
+        width: min(95%, 80ch);
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    #homepage .smth .heading {
+        width: min(100%, 140ch);
+        max-width: 140ch;
+        text-align: center;
+        white-space: normal;
+        overflow-wrap: normal;
+        word-break: keep-all;
+    }
+
+    #homepage .smth .text {
+        width: min(95%, 80ch);
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu-panel {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        gap: 2.5vw;
+        background: transparent;
+        border: none;
+        background-color: var(--black);
+        border-radius: 10vw;
+        padding: 1.2vh 1.8vw;
+        left: -10em;
+    }
+
+    .menu-panel a {
+        padding: 0;
+    }
+
+    .games-grid {
+        flex-direction: row;
+        gap: 2.5rem;
+        align-items: flex-start;
+    }
+
+    .games-column--left {
+        order: 1;
+    }
+
+    .games-column--right {
+        order: 2;
+    }
+
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.8rem;
+        padding: 2.2vh 2vw;
+    }
+
+    .card-swiper {
+        flex: 0 0 clamp(190px, 18vw, 290px);
+        width: clamp(190px, 18vw, 290px);
+        max-width: none;
+    }
+
+    .game-card__content {
+        flex: 1 1 0;
+        align-items: flex-start;
+    }
+
+    .game-card__title {
+        margin-bottom: 0;
+    }
+
+    .message--fields {
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .message--fields .text--field--big {
+        flex: 3 1 0;
+    }
+
+    .message .btn {
+        order: 1;
+        align-self: flex-end;
+        margin-top: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .contact-right .message {
+        max-width: 900px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .text {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        align-self: center;
+    }
+
+    .contact-right .message .btn {
+        align-self: center;
+        margin-left: 9em;
+    }
+
+    .games-grid {
+        width: min(94vw, 1500px);
+    }
+
+    .game-card {
+        padding: 1.8vh 1.2rem;
+    }
+
+    .card-nav {
+        width: 32px;
+        height: 32px;
+    }
+
+    .card-nav::before {
+        font-size: 1.35rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 0;
+    }
+
+    .message {
+        align-items: center !important;
+    }
+
+    .message--fields {
+        flex-direction: column;
+        order: 0;
+    }
+
+    .message--fields .text--field,
+    .message--fields .text--field--big {
+        display: block;
+        width: 100% !important;
+        max-width: none !important;
+        box-sizing: border-box;
+    }
+
+    .message .btn {
+        order: 1;
+        display: block;
+        width: auto;
+        margin-top: 0.8rem;
+        margin-left: 0;
+        margin-right: 0;
+        align-self: flex-end;
+    }
+
+    .contact-middle {
+        flex: none;
+        width: auto;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .contact-left {
+        order: 1;
+    }
+
+    .contact-right {
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        order: 3;
+    }
+
+    .contact-left .smth {
+        text-align: center;
+    }
+
+    .contact-right .message {
+        margin: 0 auto;
+        width: min(95%, 28em);
+    }
 }
