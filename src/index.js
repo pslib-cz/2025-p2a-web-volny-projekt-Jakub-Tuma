@@ -67,8 +67,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.cardSwipers = window.cardSwipers || [];
 		window.cardSwipers.push(instance);
 	});
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> origin/build

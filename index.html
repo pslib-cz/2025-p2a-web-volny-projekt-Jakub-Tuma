@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,7 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
-    <header class="navbar" aria-label="VoidWorks header">
+    <header class="navbar">
         <div class="brand">
             <a href="index.html">
                 <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo" href="index.html">
@@ -19,14 +19,13 @@
             </a>
         </div>
 
-        <a class="menu-button" href="#" aria-label="Otevřít menu" aria-expanded="false"
-            aria-controls="site-menu">
+        <a class="menu-button" href="#">
             <span></span>
             <span></span>
             <span></span>
         </a>
 
-        <nav class="menu-panel" id="site-menu" aria-label="Navigace">
+        <nav class="menu-panel" id="site-menu">
             <a href="index.html">Domů</a>
             <a href="games.html">Hry</a>
             <a href="contact.html">Kontakt</a>
@@ -34,38 +33,38 @@
     </header>
 
     <main id="main-content">
-        <section id="homepage" class="centered" aria-labelledby="hero-heading">
-            <span class="smth">
+        <section id="homepage" class="centered">
+            <div class="homepage-left">
                 <h1 class="heading heading--purple" id="hero-heading">Tvoříme světy, které nezapomeneš</h1>
                 <p class="text">
                     Každá hra, kterou vytvoříme, začíná jednou otázkou — co když příběh opravdu záleží?
                     Ve VoidWorks nevytváříme jen hry. Vytváříme světy plné temných tajemství, zlomených hrdinů
                     a rozhodnutí, která tě budou pronásledovat dlouho po konci titulků.
                 </p>
-            </span>
+            </div>
+
+            <div class="homepage-right img-container">
+                <picture class="img img-blur">
+                    <source type="image/avif" srcset="src/assets/char/avif/mercenary.avif">
+                    <source type="image/webp" srcset="src/assets/char/webp/mercenary.webp">
+                    <img src="src/assets/char/jpg/mercenary.jpg" alt="mercenary" class="img img-blur">
+                </picture>
+
+                <picture class="img img-blur">
+                    <source type="image/avif" srcset="src/assets/char/avif/astronaut.avif">
+                    <source type="image/webp" srcset="src/assets/char/webp/astronaut.webp">
+                    <img src="src/assets/char/jpg/astronaut.jpg" alt="astronaut" class="img img-blur">
+                </picture>
+
+                <picture class="img img-blur">
+                    <source type="image/avif" srcset="src/assets/char/avif/knight.avif">
+                    <source type="image/webp" srcset="src/assets/char/webp/knight.webp">
+                    <img src="src/assets/char/jpg/knight.jpg" alt="knight" class="img img-blur">
+                </picture>
+            </div>
         </section>
 
-        <section class="img-container" aria-label="Postavy z našich her">
-            <picture class="img img-blur" aria-label="mercenary">
-                <source type="image/avif" srcset="src/assets/char/avif/mercenary.avif">
-                <source type="image/webp" srcset="src/assets/char/webp/mercenary.webp">
-                <img src="src/assets/char/jpg/mercenary.jpg" alt="mercenary" class="img img-blur">
-            </picture>
-
-            <picture class="img img-blur" aria-label="astronaut">
-                <source type="image/avif" srcset="src/assets/char/avif/astronaut.avif">
-                <source type="image/webp" srcset="src/assets/char/webp/astronaut.webp">
-                <img src="src/assets/char/jpg/astronaut.jpg" alt="astronaut" class="img img-blur">
-            </picture>
-
-            <picture class="img img-blur" aria-label="knight">
-                <source type="image/avif" srcset="src/assets/char/avif/knight.avif">
-                <source type="image/webp" srcset="src/assets/char/webp/knight.webp">
-                <img src="src/assets/char/jpg/knight.jpg" alt="knight" class="img img-blur">
-            </picture>
-        </section>
-
-        <section id="games" class="centered" aria-labelledby="games-heading">
+        <section id="games" class="centered">
             <h2 class="heading heading--purple" id="games-heading">Příklad naších her</h2>
             <p class="text">
                 Každý titul, který jsme vydali, nese otisk stejného přesvědčení: příběh není ozdoba,
@@ -96,7 +95,7 @@
             </div>
         </section>
 
-        <section id="philosophy" class="centered" aria-labelledby="philosophy-heading">
+        <section id="philosophy" class="centered">
             <h2 class="heading heading--purple" id="philosophy-heading">Naše filozofie</h2>
             <p class="text">
                 Herní průmysl je plný titulů navržených tak, aby tě udržely co nejdéle přilepeného k obrazovce.
@@ -109,19 +108,21 @@
                 skutečná.
             </p>
         </section>
+    </main>
 
-        <footer class="footer">
-            <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
-            <div class="text">
-                <a href="mailto:jakub.tuma@gambaaa.fun" class="text--email">contact@voidworks.com</a>
-            </div>
-            <nav class="nav-footer" aria-label="Patička navigace">
-                <a href="index.html">Domů</a>
-                <span></span>
-                <a href="games.html">Hry</a>
-                <span></span>
-                <a href="contact.html">Kontakt</a>
-            </nav>
-        </footer>
+    <footer class="footer">
+        <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
+        <div class="text">
+            <a href="mailto:jakub.tuma@gambaaa.fun" class="text--email">contact@voidworks.com</a>
+        </div>
+        <nav class="nav-footer">
+            <a href="index.html">Domů</a>
+            <span></span>
+            <a href="games.html">Hry</a>
+            <span></span>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </footer>
 </body>
+
 </html>
