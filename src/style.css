@@ -12,6 +12,10 @@
     --click: #4B4465;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/build
 * {
     box-sizing: border-box;
     margin: 0;
@@ -209,6 +213,10 @@ section .heading {
 }
 
 .img-container {
+<<<<<<< HEAD
+=======
+    display: flex;
+>>>>>>> origin/build
     text-align: center;
     overflow: hidden;
 }
@@ -235,6 +243,13 @@ section .heading {
     gap: 8vh;
 }
 
+<<<<<<< HEAD
+=======
+.game-container .game-card {
+    min-height: 760px;
+}
+
+>>>>>>> origin/build
 .games-grid {
     display: flex;
     flex-direction: column;
@@ -400,6 +415,7 @@ section .heading {
     transform: translateY(-1px);
 }
 
+<<<<<<< HEAD
 .card-prev::before {
     content: '‹';
 }
@@ -408,6 +424,8 @@ section .heading {
     content: '›';
 }
 
+=======
+>>>>>>> origin/build
 .card-prev {
     left: 8px;
 }
@@ -685,6 +703,26 @@ section .heading {
     }
 
 @media (min-width: 1024px) {
+<<<<<<< HEAD
+=======
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-footer {
+        flex-wrap: nowrap;
+        gap: 2vw;
+    }
+
+    .nav-footer span {
+        background: var(--footer);
+        display: block;
+        width: 1px;
+        height: 1em;
+    }
+
+>>>>>>> origin/build
     .heading--left {
         text-align: left;
     }
@@ -747,6 +785,10 @@ section .heading {
         background-color: var(--black);
         border-radius: 10vw;
         padding: 1.2vh 1.8vw;
+<<<<<<< HEAD
+=======
+        left: -10em;
+>>>>>>> origin/build
     }
 
     .menu-panel a {
@@ -775,12 +817,15 @@ section .heading {
         padding: 2.2vh 2vw;
     }
 
+<<<<<<< HEAD
     .game-card--row {
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
     }
 
+=======
+>>>>>>> origin/build
     .card-swiper {
         flex: 0 0 clamp(190px, 18vw, 290px);
         width: clamp(190px, 18vw, 290px);

@@ -47,7 +47,11 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
+<<<<<<< HEAD
 | GitHub Pages (live) | [`Pageeeeees`](https://pslib-cz.github.io/2025-p2a-web-volny-projekt-Jakub-Tuma/) |
+=======
+| GitHub Pages (live) | [`Pageeeeees`](https://vape-master.gambaaa.fun/) |
+>>>>>>> origin/build
 | Grafický manuál (Figma / Canva) | [`Grafický Manuál`](https://www.figma.com/design/Q41LSNAJJECAJMxAptLOxl/Web-projekt?node-id=6-138&t=cnLXxC37ZhpKhOMG-0) |
 | Grafický návrh webu (Figma) | [`Návrh`](https://www.figma.com/design/Q41LSNAJJECAJMxAptLOxl/Web-projekt?node-id=1-3&p=f&t=cnLXxC37ZhpKhOMG-0) |
 | Fotografie / média | [`Assets`](src/assets/) |
