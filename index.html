@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="src/assets/logo/VoidWorks logo.svg" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/logo/VoidWorks logo.svg">
+    <link rel="stylesheet" href="src/style.css">
     <script src="src/index.js" defer></script>
     <title>VoidWorks</title>
 </head>
@@ -14,12 +14,12 @@
     <header class="navbar">
         <div class="brand">
             <a href="index.html">
-                <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo" href="index.html">
-                <p class="heading">VoidWorks</p>
+                <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo">
+                <span class="heading">VoidWorks</span>
             </a>
         </div>
 
-        <a class="menu-button" href="#">
+        <a class="menu-button" href="#site-menu" aria-label="Otevřít menu">
             <span></span>
             <span></span>
             <span></span>
@@ -41,31 +41,40 @@
                     Ve VoidWorks nevytváříme jen hry. Vytváříme světy plné temných tajemství, zlomených hrdinů
                     a rozhodnutí, která tě budou pronásledovat dlouho po konci titulků.
                 </p>
+                <p class="text text--secondary">
+                    Nejsme studio, které honí trofeje a žebříčky. Jsme parta lidí posedlých
+                    jednou věcí — vyprávět příběhy, které se dotýkají. Každý pixel, každá
+                    hudební nota, každá dialogová větev existuje proto, aby tě zasáhla tam,
+                    kde to bolí — nebo překvapí.
+                </p>
             </div>
 
-            <div class="homepage-right img-container">
-                <picture class="img img-blur">
+            <div class="homepage-right">
+                <picture>
                     <source type="image/avif" srcset="src/assets/char/avif/mercenary.avif">
                     <source type="image/webp" srcset="src/assets/char/webp/mercenary.webp">
-                    <img src="src/assets/char/jpg/mercenary.jpg" alt="mercenary" class="img img-blur">
+                    <img src="src/assets/char/jpg/mercenary.jpg" alt="Postava žoldáka z hry Neon Requiem"
+                        class="img img-blur" loading="lazy">
                 </picture>
 
-                <picture class="img img-blur">
+                <picture>
                     <source type="image/avif" srcset="src/assets/char/avif/astronaut.avif">
                     <source type="image/webp" srcset="src/assets/char/webp/astronaut.webp">
-                    <img src="src/assets/char/jpg/astronaut.jpg" alt="astronaut" class="img img-blur">
+                    <img src="src/assets/char/jpg/astronaut.jpg" alt="Postava astronauta z hry Starbound Stray"
+                        class="img img-blur img-center" loading="lazy">
                 </picture>
 
-                <picture class="img img-blur">
+                <picture>
                     <source type="image/avif" srcset="src/assets/char/avif/knight.avif">
                     <source type="image/webp" srcset="src/assets/char/webp/knight.webp">
-                    <img src="src/assets/char/jpg/knight.jpg" alt="knight" class="img img-blur">
+                    <img src="src/assets/char/jpg/knight.jpg" alt="Postava rytíře z hry Devoured Oath"
+                        class="img img-blur" loading="lazy">
                 </picture>
             </div>
         </section>
 
         <section id="games" class="centered">
-            <h2 class="heading heading--purple" id="games-heading">Příklad naších her</h2>
+            <h2 class="heading heading--purple" id="games-heading">Příklad našich her</h2>
             <p class="text">
                 Každý titul, který jsme vydali, nese otisk stejného přesvědčení: příběh není ozdoba,
                 příběh je základ. Od mrazivých kosmických hororů po středověké tragédie — naše hry se neptají,
@@ -76,8 +85,8 @@
                 <article class="game-card">
                     <div class="game-card__tag">Cyberpunk / Action RPG</div>
                     <h3 class="game-card__title">Neon Requiem</h3>
-                    <p class="game-card__text">Žoldák ve válce bez vítězů. Každé rozhodnutí má cenu - jseš přípravený ji
-                        zaplatit.</p>
+                    <p class="game-card__text">Žoldák ve válce bez vítězů. Každé rozhodnutí má cenu — jsi připravený ji
+                        zaplatit?</p>
                 </article>
 
                 <article class="game-card">
@@ -109,6 +118,7 @@
             </p>
         </section>
     </main>
+
 
     <footer class="footer">
         <div>© 2025 VoidWorks. Všechna práva vyhrazena.</div>
