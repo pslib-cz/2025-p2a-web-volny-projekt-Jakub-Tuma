@@ -1,9 +1,10 @@
-@import url(./normalize.css) layer(reset);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer (init);
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap') layer (init);
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap') layer (init);
+@import url(./styles/normalize.css) layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap') layer(init);
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap') layer(init);
 
 @layer reset, init, design, media;
+
 
 
 @layer init {
@@ -183,7 +184,6 @@
         font-size: clamp(2.8rem, 6vw, 4.5rem);
         line-height: 1.1;
         font-weight: 700;
-        letter-spacing: -0.03em;
         color: var(--text-color);
         font-family: var(--font-heading);
         letter-spacing: -0.1em;
@@ -206,8 +206,11 @@
         align-self: center;
     }
 
-    .text--email-white:hover {
+    .text--email-white {
         transition: color 180ms ease-in-out;
+    }
+
+    .text--email-white:hover {
         color: var(--hover);
         text-decoration: underline;
     }
@@ -249,7 +252,7 @@
 
     .game-container {
         display: flex;
-        justify-items: center;
+        justify-content: center;
         gap: 8vh;
         padding: 0 4vw;
     }
@@ -298,15 +301,6 @@
         border-color: rgba(136, 122, 183, 0.5);
     }
 
-    .game-card__img {
-        width: clamp(180px, 28vw, 360px);
-        aspect-ratio: 3 / 4;
-        object-fit: cover;
-        background: rgba(0, 0, 0, 0.12);
-        border-radius: 10px;
-        display: block;
-        box-shadow: 0 1.2vh 3vw rgba(0, 0, 0, 0.45);
-    }
 
     .game-card__tag {
         color: var(--purple);
@@ -376,6 +370,7 @@
         max-width: 320px;
         overflow: hidden;
         flex: 0 0 auto;
+        position: relative;
     }
 
     .card-swiper picture,
@@ -428,9 +423,6 @@
         right: 8px;
     }
 
-    .card-swiper {
-        position: relative;
-    }
 
     .game-card__img {
         width: 100%;
@@ -494,10 +486,10 @@
     .text--email {
         text-decoration: none;
         color: var(--footer);
+        transition: color 180ms ease-in-out;
     }
 
     .text--email:hover {
-        transition: color 180ms ease-in-out;
         color: var(--hover);
         text-decoration: underline;
     }
@@ -507,7 +499,6 @@
         gap: 4vw;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 0.5vh;
     }
 
     .nav-footer a {
@@ -785,7 +776,6 @@
         display: flex;
         flex-direction: row;
         width: auto;
-        padding: 0;
         gap: 2.5vw;
         background: transparent;
         border: none;

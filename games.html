@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hry – VoidWorks</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="icon" type="image/svg+xml" href="src/assets/logo/VoidWorks logo.svg">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" type="image/svg+xml" href="src/assets/logo/VoidWorks.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
-    <script src="src/index.js" defer></script>
+    <script src="src/scripts/index.js" defer></script>
 </head>
 
 <body>
     <header class="navbar">
         <div class="brand">
             <a href="index.html">
-                <img src="src/assets/logo/VoidWorks logo.svg" alt="VoidWorks Logo">
+                <img src="src/assets/logo/VoidWorks.svg" alt="VoidWorks Logo">
                 <span class="heading">VoidWorks</span>
             </a>
         </div>
 
-        <a class="menu-button" href="#site-menu" aria-label="Otevřít menu">
+        <a class="menu-button" href="#site-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -36,6 +36,7 @@
 
     <main id="main-content" class="game-container">
         <section>
+            <h1 class="sr-only">Naše hry</h1>
             <div class="games-grid">
                 <div class="column games-column games-column--left">
                     <article class="game-card game-card--row">
@@ -73,7 +74,7 @@
                         </div>
                         <div class="game-card__content">
                             <div class="game-card__tag">Cyberpunk / Action RPG</div>
-                            <h3 class="game-card__title">Neon Requiem</h3>
+                            <h2 class="game-card__title">Neon Requiem</h2>
                             <p class="game-card__text">V rozpadajícím se kyberpunkovém městě
                                 přežívá jen ten nejsilnější. Kai je žoldačka bez minulosti —
                                 nebo si to aspoň myslí. Spousta temných
