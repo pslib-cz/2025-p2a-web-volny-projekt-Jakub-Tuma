@@ -1,20 +1,19 @@
+const header = document.querySelector('.navbar');
 const menuButton = document.querySelector('.menu-button');
 const menuPanel = document.querySelector('.menu-panel');
-const smth = document.querySelector('.smth');
 
-if (menuButton && menuPanel) {
+if (header && menuButton && menuPanel) {
 	const setMenuState = (isOpen) => {
-		document.body.classList.toggle('menu-open', isOpen);
-		menuButton.setAttribute('aria-expanded', String(isOpen));
-		menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+		header.classList.toggle('menu-open', isOpen);
 	};
 
-	menuButton.addEventListener('click', () => {
-		setMenuState(!document.body.classList.contains('menu-open'));
+	menuButton.addEventListener('click', (event) => {
+		event.preventDefault();
+		setMenuState(!header.classList.contains('menu-open'));
 	});
 
 	document.addEventListener('click', (event) => {
-		if (!document.body.classList.contains('menu-open')) {
+		if (!header.classList.contains('menu-open')) {
 			return;
 		}
 
